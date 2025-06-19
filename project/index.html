@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Device Filtering App</title>
+  </head>
+  <body>
+    <header class="bg-gray-800 p-4 fixed right-0 top-0 left-0 z-10">
+      <div class="mx-auto max-w-6xl grid grid-cols-[1fr_auto] gap-5 px-3">
+        <!-- Search input  -->
+        <div class="relative text-white w-full flex overflow-hidden">
+          <input
+            type="text"
+            placeholder="Search product"
+            class="border py-2 pl-9 rounded-full min-w-0 focus:w-full outline-0"
+            id="search"
+          />
+
+          <div class="absolute top-3 left-3 flex items-center">
+            <i class="bxr bx-search-big text-white"></i>
+          </div>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="flex items-center relative">
+          <i class="bx bx-cart-minus text-white text-3xl cursor-pointer"></i>
+
+          <!-- Cart Quantity -->
+          <small
+            class="absolute text-white bg-red-500 h-4 w-auto px-1 rounded-full flex justify-center items-center top-0 -right-2"
+            id="cart-count"
+            >0</small
+          >
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
